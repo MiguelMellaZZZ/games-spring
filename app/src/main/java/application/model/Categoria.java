@@ -1,4 +1,7 @@
 package application.model;
+
+import application.model.Jogo;
+
 import java.util.HashSet;
 import java.util.Set;
 
@@ -12,8 +15,6 @@ import jakarta.persistence.OneToMany;
 
 @Entity
 @Table(name = "categorias")
-
-
 public class Categoria{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -44,7 +45,7 @@ public class Categoria{
         return jogos;
     }
     
-    public void set Jogos (Set<Jogo> jogos) {
+    public void setJogos (Set<Jogo> jogos) {
         this.jogos = jogos;
     }
 
