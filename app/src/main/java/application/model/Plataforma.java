@@ -31,19 +31,19 @@ import jakarta.persistence.Table;
         this.id = id;
     }
 
-    public string getNome() {
+    public String getNome() {
         return nome;
     }
     
     public void setNome(String nome) {
-        this.nome nome;
+        this.nome = nome;
     }
 
-    public Set<Jogo> get Jogos () {
+    public Set<Jogo> getJogos () {
         return jogos;
     }
 
-    public void set Jogos (Set<Jogo> jogos) {
+    public void setJogos (Set<Jogo> jogos) {
         this.jogos = jogos;
     }
 }

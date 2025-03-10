@@ -1,6 +1,6 @@
 package application.controller;
 
-import java.util.optional;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -44,7 +44,7 @@ public class PlataformaController {
         @RequestParam("id") long id,
         Model ui) {
 
-        Optional<Plataforma> plataforma plataformaRepo.findById(id);
+        Optional<Plataforma> plataforma = plataformaRepo.findById(id);
 
         if(plataforma.isPresent()) {
             ui.addAttribute("plataforma", plataforma.get());
@@ -59,7 +59,7 @@ public class PlataformaController {
         @RequestParam("id") long id,
         @RequestParam("nome") String nome) {
     
-        Optional<Plataforma> plataforma plataformaRepo.findById(id);
+        Optional<Plataforma> plataforma = plataformaRepo.findById(id);
     
         if(plataforma.isPresent()) {
             plataforma.get().setNome(nome);
