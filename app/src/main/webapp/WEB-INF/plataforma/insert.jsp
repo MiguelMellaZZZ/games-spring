@@ -11,8 +11,8 @@
             <h1>Nova Plataforma</h1>
             <form action="/plataforma/insert" method="post">
                 <div class="form-group">
-                    <label for="none">Nome:</label>
-                    <input type="text" name="none" class="form-control" />
+                    <label for="nome">Nome:</label>
+                    <input type="text" name="nome" id="nome" class="form-control" />
                 </div>
                 <br />
                 <a href="/plataforma/list" class="btn btn-primary">Voltar</a>

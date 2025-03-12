@@ -9,12 +9,12 @@
     </head>
     <body>
         <div class="container">
-        <h1>Jogos</h1>
+            <h1>Jogos</h1>
             <a href="/jogo/insert" class="btn btn-primary">Novo Jogo</a>
             <table class="table">
                 <tr>
                     <th>Id</th>
-                    <th>Titulo</th>
+                    <th>Título</th>
                     <th>Categoria</th>
                     <th>Plataformas</th>
                     <th>&nbsp;</th>
@@ -25,14 +25,13 @@
                         <td>${item.titulo}</td>
                         <td>${item.categoria.nome}</td>
                         <td>
-                            <c:forEach var="p" varStatus="s" items="${item. plataformas}">
-                                $(s.getCount() > 1 ? ", " : "")
-                                ${p.nome}
+                            <c:forEach var="p" varStatus="s" items="${item.plataformas}">
+                                <c:if test="${!s.first}">, </c:if>${p.nome}
                             </c:forEach>
                         </td>
                         <td>
-                            <a href="/jogo/update?id-${item.id}" class="btn btn-warning">Editar</a>
-                            <a href="/jogo/delete?id-${item.id}" class="btn btn-danger">Excluir</a>
+                            <a href="/jogo/update?id=${item.id}" class="btn btn-warning">Editar</a>
+                            <a href="/jogo/delete?id=${item.id}" class="btn btn-danger">Excluir</a>
                         </td>
                     </tr>
                 </c:forEach>

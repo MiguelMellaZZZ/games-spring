@@ -9,7 +9,8 @@
     <body>
         <div class="container">
             <h1>Remover Plataforma</h1>
-            <p>Tem certeza que deseja remover a plataforma "$(plataforma.nome}" ?</p>
+            <p>Tem certeza que deseja remover a plataforma "<strong>${plataforma.nome}</strong>"?</p>
+            
             <form action="/plataforma/delete" method="post">
                 <input type="hidden" name="id" value="${plataforma.id}" />
                 <br />
