@@ -9,6 +9,9 @@
     </head>
     <body>
         <div class="container">
+            <!-- Botão para voltar para a home -->
+            <a href="https://8080-miguelmella-gamesspring-u3jgptp4psp.ws-us118.gitpod.io/" class="btn btn-secondary mb-3">Voltar para Home</a>
+            <br>
             <h1>Jogos</h1>
             <a href="/jogo/insert" class="btn btn-primary">Novo Jogo</a>
             <table class="table">

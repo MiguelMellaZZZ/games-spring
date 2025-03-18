@@ -3,12 +3,16 @@
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
+        
         <meta charset="UTF-8" />
         <title>Plataformas</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     </head>
     <body>
         <div class="container">
+            <!-- Botão para voltar para a home -->
+            <a href="https://8080-miguelmella-gamesspring-u3jgptp4psp.ws-us118.gitpod.io/" class="btn btn-secondary mb-3">Voltar para Home</a>
+            <br>
             <h1>Plataformas</h1>
             <a href="/plataforma/insert" class="btn btn-primary">Nova Plataforma</a>
             <table class="table">

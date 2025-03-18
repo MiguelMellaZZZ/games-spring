@@ -10,6 +10,9 @@
 </head>
 <body>
     <div class="container mt-4">
+        <!-- Botão para voltar para a home -->
+        <a href="https://8080-miguelmella-gamesspring-u3jgptp4psp.ws-us118.gitpod.io/" class="btn btn-secondary mb-3">Voltar para Home</a>
+        <br>
         <h1>Categorias</h1>
         <a href="/categoria/insert" class="btn btn-primary mb-3">Nova Categoria</a>
         <table class="table">
